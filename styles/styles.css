@@ -1,0 +1,328 @@
+/* Reset */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box
+}
+
+
+/* Fuente */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+
+
+body{
+  font-family: "Rubik", sans-serif;
+  background-color: #1E1E1E;
+  margin: 0 32px;
+}
+
+header{
+  background-color: #2E2E2E;
+  border-radius: 5px;
+  margin-top: 15px;
+  padding-top: 32px;
+}
+
+/* Diseño del NAV */
+.nav-link{
+  border-radius: 6px;
+  margin: 5px;
+  padding: 3px;
+  color: #D9CAB3;
+  background-color: #B05B3B;
+}
+.nav-link:hover{
+  background-color: #f5a588;
+}
+
+/* Main content */
+h1 {
+  color: #D9CAB3;
+  font-size: 64px;
+  font-family: "Rubik", sans-serif;
+  text-align: center;
+  margin: 20px;
+}
+
+h2{
+  display: inline;
+  color: burlywood;
+  font-size: 45px;
+  margin: 10px;
+  border: 3px;
+  padding: 3px;
+  text-align: center;
+}
+
+h3{
+  color: blanchedalmond;
+  margin: 10px;
+  border: 3px;
+  padding: 3px;
+  text-align: center;
+}
+
+h4{
+  text-align: center;
+}
+
+p{
+  color: #8A8A8A;
+}
+
+/* index.html */
+.mainpag-picture1{
+  text-align: center;
+}
+.mainpag-picture1 img{
+  width: 75%;
+}
+.mainpag-picture2{
+  text-align: center;
+}
+.mainpag-picture2 img{
+  width: 75%;
+}
+.maincontent-index {
+  text-align: center;
+  margin: 60px;
+}
+
+/* Footers */
+.footers {
+  display: inline;
+  float: inline-start;
+  position: sticky;
+  color: #000000;
+   font-size: 13px;
+   margin-top: 150px;
+   border: 3px;
+   padding: 10px;
+}
+
+/* productos.html */
+.stock-section{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 10px;
+}
+.div-stock{
+  color: #ffffff;
+  background-color: #2E2E2E;
+  margin: 10px;
+  padding: 10px;
+  border: 10px;
+  border-radius: 6px;
+  width: 350px;
+  
+}
+.div-stock img{
+  width: 100%;
+  border: solid #B05B3B;
+  border-radius: 5px;
+}
+
+.div-stock p{
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.div-stock a{
+  text-decoration: none;
+  color: #ffffff;
+  margin: 3px;
+  border: solid #B05B3B 1px;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 18px;
+  background-color: #B05B3B;
+  width: 110px;
+}
+.div-stock a:hover{
+  background-color: #D96C3B;
+  border-color: #D96C3B;
+}
+
+.precio-detalles {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+    margin: 15px;
+}
+
+/* cuidadoProd.html */
+
+.h2-cuidadoProd p{
+  font-size: 1px;
+}
+li{
+  color: #ccc;
+  text-align: start;
+}
+form{
+  color: #ccc;
+}
+/* contacto.html */
+.div-contacto{
+  display: flex;
+  justify-content: space-between;
+  margin: 30px;
+  padding: 10px;
+  gap: 10px;
+}
+
+/* RESPONSIVE */
+
+/* CELULARES */
+@media (max-width: 430px) {
+  h1 {
+    font-size: 28px;
+    text-align: center;
+    margin: 20px 0;
+  }
+
+  .section-index {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .mainpag-picture1,
+  .mainpag-picture2 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .mainpag-picture1 img,
+  .mainpag-picture2 img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .maincontent-index {
+    padding: 0 16px;
+    text-align: left;
+  }
+
+  h2 {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  footer .div-footer {
+    text-align: center;
+    font-size: 12px;
+    padding: 10px;
+  }
+
+  .stock-section {
+    grid-template-columns: 1fr;
+  }
+
+  .div-stock {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  h1 {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .precio-detalles {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+
+}
+
+/* TABLETS */
+@media (min-width: 431px) and (max-width: 768px){
+  h1 {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .section-index {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .mainpag-picture1,
+  .mainpag-picture2 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .mainpag-picture1 img,
+  .mainpag-picture2 img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .maincontent-index {
+    padding: 0 16px;
+    text-align: left;
+  }
+
+  footer .div-footer {
+    text-align: center;
+    padding: 10px;
+  }
+
+  .stock-section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .div-stock {
+    width: 100%;
+    margin: 10px 5px;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+
+  .precio-detalles {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .navbar-nav {
+    gap: 10px;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
